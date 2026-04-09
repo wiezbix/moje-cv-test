@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,8 +15,7 @@ body{
     background-color: rgba(151, 150, 141, 0.786);
     width: 95%;
     max-width: 800px;
-    margin: 30px auto ;
-    min-height: 0;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -115,7 +114,9 @@ body{
 .skills h2, 
 .language h2, 
 .hard-skills h2, 
-.in-progress h2{
+.in-progress h2,
+.experience h2,
+.about-me h2{
     margin-bottom: 10px;
     font-size: 22px;
     text-transform: uppercase;
@@ -139,7 +140,6 @@ body{
     margin-top: 3px;
 }
 
-
 .hard-skills li, .in-progress li{
     position: relative;
     left: 30px;
@@ -150,8 +150,6 @@ body{
     margin-top: 40px;
 
 }
-
-
 
 .language{
     margin: 10px;
@@ -175,11 +173,32 @@ body{
     font-size: 28px;
 }
 
-.about-me p{
-    font-size: 20px;
+.facts-about-me{
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
 }
+
+.experience{
+    border-top: 1px solid black;
+    padding-top: 10px;
+    margin: 15px;
+}
+
+.date-possesion{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.exp-tasks{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 
 @media (max-width:700px) {
     .main-container{
