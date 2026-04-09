@@ -122,6 +122,12 @@ body{
     text-transform: uppercase;
 }
 
+.hard-skills h2,
+.in-progress h2{
+    position:relative;
+    left:7px;
+}
+
 .school-addres{
     font-weight: lighter;
 }
