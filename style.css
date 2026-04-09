@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    background-color: rgba(151, 150, 141, 0.786);
+    width: 95%;
+    max-width: 800px;
+    margin: 30px auto ;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.286);
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    background-color: rgb(103, 103, 103);
+    height: 180px;
+    border-bottom: 2px solid black;
+}
+
+.prof-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    height: 165px;
+}
+
+.name-area{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 15px;
+    gap: 10px;
+    position: relative;
+    left: 20px;
+}
+
+.contact-area{
+    display: grid;
+    margin: 10px;
+
+}
+.contact-box{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.contact-area img{
+    filter: invert(1);
+    height: 22px;
+}
+
+.contact-area a, .contact-area p{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;;
+    height: auto;
+    min-height: auto;
+}
+
+.content{
+    flex: 6;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+
+}
+
+.sidebar{
+    flex: 4;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+    border-right: 4px solid black;
+
+}
+
+.stopka{
+    background-color: rgb(215, 215, 215);
+}
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.formation h2, 
+.skills h2, 
+.language h2, 
+.hard-skills h2, 
+.in-progress h2{
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.school-addres{
+    font-weight: lighter;
+}
+
+.skills{
+    margin: 40px 10px;
+}
+
+.skills-list{
+    position: relative;
+    left: 20px;
+    font-size: 18px;
+}
+
+.skills-list li{
+    margin-top: 3px;
+}
+
+
+.hard-skills li, .in-progress li{
+    position: relative;
+    left: 30px;
+}
+
+.in-progress{
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+
+
+.language{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language-select{
+    font-weight: bold;
+}
+
+.about-me{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-me h2{
+    font-size: 28px;
+}
+
+.about-me p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width:700px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+        border-bottom-left-radius: 0;
+        border-bottom:2px solid black ;
+    }
+
+    .header{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    .prof-picture{
+        justify-content: center;
+    }
+    .name-area{
+        position: static;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-area{
+        justify-content: center;
+        margin: 0;
+    }
+    .sidebar{
+        order: 2;
+        border-right:none ;
+        border-top: 4px solid black;
+    }
+
+    .content{
+        order:1;
+    }
+}
