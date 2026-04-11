@@ -231,8 +231,8 @@ body{
         text-align: center;
     }
     .contact-area{
-        justify-content: center;
-        margin: 0;
+        margin: 0 auto 0;
+        gap:7px;
     }
     .sidebar{
         order: 2;
@@ -242,5 +242,15 @@ body{
 
     .content{
         order:1;
+    }
+}
+
+@media (815px > width > 700px) {
+    .contact-area a, 
+    .contact-area p{
+        font-size:12px;
+    }
+    .contact-area img{
+        transform: scale(0.9);
     }
 }
