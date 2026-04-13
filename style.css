@@ -39,7 +39,8 @@ body{
 }
 
 .picture{
-    height: 165px;
+    height: 160px;
+    padding: 5px;
 }
 
 .name-area{
