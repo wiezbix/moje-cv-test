@@ -18,9 +18,9 @@ body{
     margin:  auto;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.286);
 }
 
